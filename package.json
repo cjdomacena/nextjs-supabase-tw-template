@@ -8,12 +8,16 @@
     "yarn": "plaese use npm"
   },
   "scripts": {
-    "dev": "next dev",
+  
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev", 
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write .",
     "prepare": "husky install"
+  },
+  "scriptComments": {
+    "dev": "When running dev server, we can debug and check logs on the client"
   },
   "dependencies": {
     "@types/node": "18.11.13",
@@ -30,6 +34,7 @@
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
     "autoprefixer": "^10.4.13",
+    "cross-env": "^7.0.3",
     "husky": "^8.0.2",
     "postcss": "^8.4.20",
     "prettier": "^2.8.1",
