@@ -1,4 +1,6 @@
-# NextJS + Supabase + Tailwind template
+# NextJS + Supabase + Tailwind template (In Progress)
+
+- TODO: Add supabase
 
 This template is directly based on [Alex Eagleson's](https://dev.to/alexeagleson/how-to-build-scalable-architecture-for-your-nextjs-project-2pb7) template tutorial. You can view his step-by-step guide [here](https://www.youtube.com/watch?v=Iu5aZDqZt8E)
 
