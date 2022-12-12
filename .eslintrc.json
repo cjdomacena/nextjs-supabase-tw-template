@@ -1,15 +1,16 @@
 {
-  "extends": ["next/core-web-vitals", "next", "eslint:recommended"],
+  "extends": [
+    "plugin:storybook/recommended",
+    "next/core-web-vitals",
+    "next",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "globals": {
     "React": "readonly" // In React >= 17, No need to import React in components
   },
   "rules": {
-    "no-unused-vars": [
-      1,
-      {
-        "args": "after-used",
-        "argsIgnorePattern": "^_"
-      } // prefix variables with _
-    ]
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn"
   }
 }
