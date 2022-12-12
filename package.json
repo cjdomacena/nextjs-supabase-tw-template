@@ -8,13 +8,14 @@
     "yarn": "plaese use npm"
   },
   "scripts": {
-  
-    "dev": "cross-env NODE_OPTIONS='--inspect' next dev", 
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "scriptComments": {
     "dev": "When running dev server, we can debug and check logs on the client"
@@ -33,11 +34,20 @@
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
+    "@storybook/addon-essentials": "^7.0.0-beta.3",
+    "@storybook/addon-interactions": "^7.0.0-beta.3",
+    "@storybook/addon-links": "^7.0.0-beta.3",
+    "@storybook/blocks": "^7.0.0-beta.3",
+    "@storybook/nextjs": "^7.0.0-beta.3",
+    "@storybook/react": "^7.0.0-beta.3",
+    "@storybook/testing-library": "^0.0.13",
     "autoprefixer": "^10.4.13",
     "cross-env": "^7.0.3",
+    "eslint-plugin-storybook": "^0.6.8",
     "husky": "^8.0.2",
     "postcss": "^8.4.20",
     "prettier": "^2.8.1",
+    "storybook": "^7.0.0-beta.3",
     "tailwindcss": "^3.2.4"
   }
 }
