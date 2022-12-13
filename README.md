@@ -20,6 +20,6 @@ This template is directly based on [Alex Eagleson's](https://dev.to/alexeagleson
 
 - Using [Husky](https://typicode.github.io/husky/#/?id=automatic-recommended) to run lint on commit and run build on push.
 
-- Using [commitlint](https://commitlint.js.org/#/) to enforce commit convetion ([subject]:[message]). ex. (`feat: Added widget`).
+- Using [commitlint](https://commitlint.js.org/#/) to enforce commit convetion ([subject]:[message]). ex. (`feat: added widget`).
 
   - For list of subjects check `commitlint.config.js` which uses default configuration from [commitlint](https://commitlint.js.org/#/)
